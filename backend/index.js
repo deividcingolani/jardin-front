@@ -12,11 +12,11 @@ const db = mysql.createPool({
     database: 'jardin',
 });
 
-app.use(cors);
+app.use(cors());
 app.use(express.json());
-app.use(bodyParser.urlencoded({entended: true}));
+app.use(bodyParser.urlencoded({extended: true}));
 
-app.post('/form', (req, res) => {
+app.post('/api/insert', (req, res) => {
 
     const nombre = req.body.nombre;
     const apellido = req.body.apellido;
@@ -26,7 +26,7 @@ app.post('/form', (req, res) => {
 
     const sql = "INSERT INTO consultas (nombre, apellido, correo, asunto, consulta) VALUES (?,?,?,?,?)";
     db.query(sql, [nombre, apellido, correo, asunto, consulta], (err, result) => {
-        console.log("It works!")
+        console.log(err)
     })
 })
 app.listen(3001, () => {

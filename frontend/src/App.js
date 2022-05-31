@@ -12,12 +12,12 @@ function App() {
   const [consulta, setConsulta] = useState('');
 
   const enviarConsulta = () => {
-    Axios.post("http://localhost:3000/", {
-      nombre: nombre, 
-      apellido: apellido, 
-      correo: correo, 
-      asunto: asunto, 
-      consulta: consulta
+    Axios.post("http://localhost:3001/api/insert", {
+      _nombre: nombre, 
+      _apellido: apellido, 
+      _correo: correo, 
+      _asunto: asunto, 
+      _consulta: consulta
     }).then( () => {
       alert('Gracias por enviar su consulta.');
     })
