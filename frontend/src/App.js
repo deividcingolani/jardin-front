@@ -17,7 +17,7 @@ export default function App() {
         <Route path="/garden" element={<Garden />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<h1>Error - 404</h1>} />
+        <Route path="*" element={<p>Error - 404</p>} />
       </Routes>
 
       <Footer />
