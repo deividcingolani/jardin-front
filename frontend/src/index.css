@@ -1,10 +1,3 @@
-:root {
-  --primary: #eaf2f6;
-  --white: #ffffff;
-  --btn: #5dd4fb;
-  --btnHover: #54c5eb;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -19,4 +12,27 @@
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
