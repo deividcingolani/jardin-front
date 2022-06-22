@@ -2,10 +2,10 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Footer from "../components/footer/Footer";
 import Navbar from "../components/navbar.js/Navbar";
-import Contact from "../pages/Contact";
-import Gallery from "../pages/Gallery";
-import Garden from "../pages/Garden";
-import Home from "../pages/Home";
+import Contact from "../pages/Contact/Contact";
+import Gallery from "../pages/Gallery/Gallery";
+import Garden from "../pages/Garden/Garden";
+import Home from "../pages/Home/Home";
 
 export default function Router() {
   return (
