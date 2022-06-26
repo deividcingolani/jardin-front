@@ -1,10 +1,14 @@
 footer{
     background-color:#F1EFFA;
     height: auto;
-    width: 100vw; 
+    width: 100%; 
     font-family: "open sans";
     padding-top: 40px;
-    color: #00036B;;
+    color: #00036B;
+    position: relative;
+    bottom: 0;
+    
+    
 }
 .footer-content{
      display: flex;
@@ -12,6 +16,8 @@ footer{
      justify-content: center;
      flex-direction: column;
      text-align: center;
+     
+    
 }
 h3{
       font-size: 1.8rem;
@@ -42,7 +48,7 @@ h3{
 }
 .footer-bottom{
       background-color: #F1EFFA;
-      width: 100vw;
+      width: 100%;
       padding: 20px 0;
       text-align: center;
 }

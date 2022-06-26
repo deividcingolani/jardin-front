@@ -26,7 +26,6 @@ export default function Footer() {
       </ul>
       <div className="footer-bottom">
         <p>copyright &copy;2022 Burbujas de algodon. Diseñado por <span>Manrique</span></p>
-
       </div>
 
 
